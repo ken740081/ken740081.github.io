@@ -233,11 +233,7 @@
 	  opacity: 0.99;
 	}
 
-	.image.fit.rwd_img{
-		width: 50%;
-		float: left;
-		padding: 0 0.5rem;
-	}
+	
 
 	.items.style3, .gallery.style1{
 		justify-content:flex-start !important;
