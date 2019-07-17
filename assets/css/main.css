@@ -239,6 +239,10 @@
 		padding: 0 0.5rem;
 	}
 
+	.items.style3, .gallery.style1{
+		justify-content:flex-start !important;
+	}
+
 
 	@media (max-width:736px) {
 	  #toggle {
