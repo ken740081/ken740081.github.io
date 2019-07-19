@@ -233,10 +233,12 @@
 	  opacity: 0.99;
 	}
 
-	
-
 	.items.style3, .gallery.style1{
 		justify-content:flex-start !important;
+	}
+
+	.gallery.style1 article .image:hover img{
+		opacity: 0.8;
 	}
 
 
