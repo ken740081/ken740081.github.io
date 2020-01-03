@@ -238,7 +238,7 @@
 	}
 
 	.bg-cover{
-		width: 20rem;
+		min-width: 20rem;
         height: 350px;
         background-size: cover;
         background-position: center top;
