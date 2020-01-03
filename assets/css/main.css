@@ -3,7 +3,7 @@
 
 /*
 	Story by HTML5 UP
-	html5up.net | @ajlkn
+	 | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
@@ -234,11 +234,14 @@
 	}
 
 	.items.style3, .gallery.style1{
-		justify-content:flex-start !important;
+	  justify-content:flex-start !important;
 	}
 
-	.gallery.style1 article .image:hover img{
-		opacity: 0.8;
+	.bg-cover{
+		width: 470px;
+        height: 350px;
+        background-size: cover;
+        background-position: center top;
 	}
 
 
