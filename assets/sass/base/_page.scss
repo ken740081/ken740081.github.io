@@ -6,47 +6,60 @@
 
 /* Basic */
 
-	// MSIE: Required for IEMobile.
-		@-ms-viewport {
-			width: device-width;
-		}
+// MSIE: Required for IEMobile.
+@-ms-viewport {
+	width: device-width;
+}
 
-	// MSIE: Prevents scrollbar from overlapping content.
-		body {
-			-ms-overflow-style: scrollbar;
-		}
+// MSIE: Prevents scrollbar from overlapping content.
+body {
+	-ms-overflow-style: scrollbar;
+}
 
-	// Ensures page width is always >=320px.
-		@include breakpoint('<=xsmall') {
-			html, body {
-				min-width: 320px;
-			}
-		}
+// Ensures page width is always >=320px.
+@include breakpoint('<=xsmall') {
 
-	// Set box model to border-box.
-	// Based on css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
-		html {
-			box-sizing: border-box;
-		}
-
-		*, *:before, *:after {
-			box-sizing: inherit;
-		}
-
-	html {
-		overflow-x: hidden;
-	}
-
+	html,
 	body {
-		background: _palette(bg);
-		overflow-x: hidden;
-
-		// Stops initial animations until page loads.
-			&.is-preload {
-				*, *:before, *:after {
-					@include vendor('animation', 'none !important');
-					@include vendor('transition', 'none !important');
-				}
-			}
-
+		min-width: 320px;
 	}
+}
+
+// Set box model to border-box.
+// Based on css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+html {
+	overflow-x: hidden;
+}
+
+body {
+	background: _palette(bg);
+	overflow-x: hidden;
+
+	// Stops initial animations until page loads.
+	&.is-preload {
+
+		*,
+		*:before,
+		*:after {
+			@include vendor('animation', 'none !important');
+			@include vendor('transition', 'none !important');
+		}
+	}
+
+}
+
+.grayscale-map {
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	/* 這是為了確保在舊版瀏覽器中也能正常顯示 */
+}
